@@ -5,8 +5,6 @@
   
 @font-face {
   font-family: "OpenSans-Regular";
-  src: url(../fonts/OpenSans-Regular.woff) format("woff");
-  src: url(../fonts/OpenSans-Regular.woff2) format("woff2");
   src: url(../fonts/OpenSans-Regular.ttf) format("opentype"); ;
   font-weight: 400;
   font-style: normal;
@@ -14,9 +12,7 @@
   
 @font-face {
   font-family: "OpenSans-Bold";
-  src: url(../fonts/OpenSans-Bold.woff) format("woff");
-  src: url(../fonts/OpenSans-Bold.woff2) format("woff2");
-  src: url(../fonts/OpenSans-Bold.ttf..) format("opentype");
+  src: url(../fonts/OpenSans-Bold.ttf) format("opentype");
   font-weight: 700;
   font-style: normal;
 }
@@ -51,8 +47,11 @@
   
   .container-with-logo-and-menu {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 15px;
   }
   
   .header-logo {
@@ -92,12 +91,13 @@
     text-transform: uppercase;
     font-family: "OpenSans-Bold";
     font-size: 45px;
-    line-height: 75px;
+    line-height: 1.66em;
     color: #FFFFFF;
   }
 
   .container-with-trends-and-title {
     margin-top: 60px;
+    margin-bottom: 64px;
   }
 
   .trends-title-text {
@@ -127,13 +127,13 @@
   }
 
   .container-for-first-trend-card {
-    padding-top: 150px;
-    padding-bottom: 15px;
-    margin-right: 4px;
+    padding: 17px;
+    margin: 0 2px;
+    min-height: 319px;
     width: 25%;
 
     display: flex;
-    flex-wrap: wrap;
+    align-items: flex-end;
     background-image: url(../images/trend1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -143,13 +143,13 @@
   }
 
   .container-for-second-trend-card {
-    padding-top: 126px;
-    padding-bottom: 15px;
-    margin-right: 4px;
+    padding: 17px;
+    margin: 0 2px;
+    min-height: 319px;
     width: 25%;
 
     display: flex;
-    flex-wrap: wrap;
+    align-items: flex-end;
     background-image: url(../images/trend2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -159,13 +159,13 @@
   }
 
   .container-for-third-trend-card {
-    padding-top: 150px;
-    padding-bottom: 15px;
-    margin-right: 4px;
+    padding: 17px;
+    margin: 0 2px;
+    min-height: 319px;
     width: 25%;
 
     display: flex;
-    flex-wrap: wrap;
+    align-items: flex-end;
     background-image: url(../images/trend3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -175,13 +175,13 @@
   }
 
   .container-for-fourth-trend-card {
-    padding-top: 150px;
-    padding-bottom: 15px;
-    margin-right: 4px;
+    padding: 17px;
+    margin: 0 2px;
+    min-height: 319px;
     width: 25%;
 
     display: flex;
-    flex-wrap: wrap;
+    align-items: flex-end;
     background-image: url(../images/trend4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -209,14 +209,10 @@
   
   .container-with-tags-and-title {
     outline: 3px solid #b59f5b;
-    position: relative;
-    margin-left: 23px;
-    margin-right: 23px;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 30px;
     padding-bottom: 15px;
-    line-height: 10px;
   }
 
   .tags-list-for-trend {
@@ -237,7 +233,7 @@
   .trend-title-text{
     margin-top: 16px;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 1.25em;
     text-transform: uppercase;
     font-family: "OpenSans-Bold"
   }
@@ -248,12 +244,13 @@
   }
 
   .container-with-maine-and-aside {
-    padding-top: 64px;
-    
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 15px;
   }
-  
+
   .main {
     width: 800px;
   }
@@ -280,7 +277,7 @@
   }
   
   .tag-list-item:nth-child(n+2) {
-    padding-left: 19px;
+    margin-left: 19px;
   }
   
   .tag-link {
@@ -297,7 +294,7 @@
     text-transform: uppercase;
     font-family: "OpenSans-Bold";
     font-size: 20px;
-    line-height: 24px;
+    line-height: 1.25em;
     
     margin-top: 11px;
     margin-bottom: 35px;
@@ -337,7 +334,7 @@
     text-decoration: none;
     font-family: "OpenSans-Regular";
     font-size: 15px;
-    line-height: 22px;
+    line-height: 1.46em;
     
     width: 368px;
     margin-top: 17px;
@@ -395,7 +392,7 @@
     text-transform: uppercase;
     font-family: "OpenSans-Bold";
     font-size: 14px;
-    line-height: 18px;
+    line-height: 1.28em;
     color: #0f0d0e;
   }
   
@@ -441,6 +438,13 @@
   
   .button-for-search:focus {
     outline: none;
+  }
+
+  .button-search-hint {
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute;
   }
   
   .title-for-subscribe {
@@ -563,6 +567,7 @@
     padding-left: 13px;
     padding-right: 13px;
     
+    display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
     font-family: "OpenSans-Bold";
@@ -671,9 +676,10 @@
   
 .container-for-products-list {
   display: flex;
-  justify-content: space-evenly;
-
-  margin-top: 24px;
+  justify-content: space-between;
+  max-width: 1220px;
+  margin: 24px auto 0 auto;
+  padding: 0 15px;
 }
 
 .product {
@@ -716,8 +722,8 @@
   margin-bottom: 15px;
 
   font-family: "OpenSans-Regular";
-	line-height: 20px;
-	font-size: 15px;
+  font-size: 15px;
+	line-height: 1.33em;
 }
 
 .info-link {
@@ -781,7 +787,7 @@
 /* стили товаров - конец */
   
   .footer {
-    padding-top: 64px;
+    margin-top: 64px;
     padding-bottom: 41px;
   }
   

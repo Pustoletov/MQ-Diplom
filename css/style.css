@@ -1,3 +1,7 @@
+body {
+  min-width: 320px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -415,7 +419,7 @@
     padding: 15px 18px;
     background-color: #f4f7f6;
     border: 0;
-    font-family: inherit;
+    font-family: "OpenSans-Regular";
     font-size: 13px;
     color: #000000
   }
@@ -877,7 +881,12 @@
   }
 
   /* ПОП-АП */
-.popup {
+
+
+.popup-flex {
+  display: flex;
+  justify-content: center;
+  align-content: center;
   width: 100%;
   min-height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
@@ -962,6 +971,9 @@
 
 .close-btn {
     display: inline-block;
+    border: 0;
+    background-color: transparent;
+    outline: transparent;
     width: 20px;
     height: 20px;
     margin-top: 35px;
@@ -971,7 +983,7 @@
 .popup-form {
     background-color: #ffffff;
     font-weight: 400;
-    font-family: inherit;
+    font-family: "OpenSans-Regular";
     font-size: 13px;
     color: #000000;
     box-sizing: border-box;
@@ -981,7 +993,7 @@
     font-size: 20px;
     color: #0f0d0e;
     font-weight: 700;
-    font-family: inherit;
+    font-family: "OpenSans-Bold";
     text-transform: uppercase;
     text-align: center;
     margin: 0;
@@ -1005,39 +1017,40 @@
 }
 
 .field-for-pop-up {
-    border: none;
-    background-color: #f4f7f6;
-    display: block;
-    height: 48px;
-    padding: 10px 20px;
-    background-image: url(../svg/form-arrows.svg);
-    background-size: 8px;
-    background-repeat: no-repeat;
-    background-position: right 10px top 50%;
+  appearance: none;
+  border: none;
+  background-color: #f4f7f6;
+  display: block;
+  height: 48px;
+  padding: 10px 20px;
+  background-image: url(../svg/form-arrows.svg);
+  background-size: 8px;
+  background-repeat: no-repeat;
+  background-position: right 10px top 50%;
 }
 
 .field:focus {
-    outline-width: 2px;
-    outline-style: solid;
-    outline-color: #b59f5b;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-color: #b59f5b;
 }
 
 .field-item {
-    font-family: inherit;
+  font-family: "OpenSans-Regular";
 }
 
 .question {
-    display: block;
-    margin-bottom: 8px;
-    font-family: inherit;
+  display: block;
+  margin-bottom: 8px;
+  font-family: "OpenSans-Regular";
 }
 
 .form-row {
-    position: relative;
+  position: relative;
 }
 
 .form-text {
-    font-family: inherit;
+  font-family: "OpenSans-Regular";
 }
 
 .form-text:before {
@@ -1075,7 +1088,7 @@
 }
 
 .text-place {
-    font-family: inherit;
+  font-family: "OpenSans-Regular";
     background-color: #f4f7f6;
     height: 131px;
     border: none;
@@ -1091,12 +1104,12 @@
 
 .textarea-question {
     display: block;
-    font-family: inherit;
+    font-family: "OpenSans-Regular";
     margin-bottom: 8px;
 }
 
 .form-button {
-    font-family: inherit;
+  font-family: "OpenSans-Bold";
     font-size: 14px;
     color: #ffffff;
     text-transform: uppercase;
